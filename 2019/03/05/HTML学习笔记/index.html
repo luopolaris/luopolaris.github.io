@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="luopolaris">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="HTML学习笔记">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="Polaris">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="http://yoursite.com">
+  
+    <link rel="alternate" href="/atom.xml" title="Polaris" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>Polaris</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">HTML学习笔记</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  主页
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  时间轴
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/luopolaris">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:2622310588@qq.com">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By luopolaris</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2019-03-05</span>
+            <span class="time">22:03:09</span>
+          </span>
+          
+          <!--  Categories  -->
+            <span class="categories info">Under 
+
+<a href="/categories/HTML/">HTML</a>
+</span>
+          
+        </div>
+        <!-- Tags -->
+        
+          <div class="post-tags text-muted">
+            Tags: 
+
+<a class="tag" href="/tags/HTML笔记/">#HTML笔记</a>
+
+
+          </div>
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h2 id="一、HTML基本构造"><a href="#一、HTML基本构造" class="headerlink" title="一、HTML基本构造"></a>一、HTML基本构造</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;（告知浏览器其自身是一个HTML文档）</span><br><span class="line"></span><br><span class="line">	&lt;head&gt;（定义文档的头部）</span><br><span class="line"></span><br><span class="line">		&lt;title&gt;这是网页的标题&lt;/title&gt;（定义文档的标题）</span><br><span class="line"></span><br><span class="line">	&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">	&lt;body&gt;（定义文档的主体）</span><br><span class="line"></span><br><span class="line">		这里是网页的内容</span><br><span class="line"></span><br><span class="line">	&lt;p&gt;这里是一个文本段&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">	&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="二、什么是HTML"><a href="#二、什么是HTML" class="headerlink" title="二、什么是HTML?"></a>二、什么是HTML?</h2><p>HTML:超文本标记语言。（Hypertext、Markup、language）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.tx →	.html 纯文本文体（静态）</span><br><span class="line"></span><br><span class="line">		.htm 纯文本文体（静态）</span><br><span class="line"></span><br><span class="line">		.asp</span><br><span class="line"></span><br><span class="line">		.jsp</span><br></pre></td></tr></table></figure></p>
+<p>超文本：是指页面可以包含图片、链接、音乐等非文字元素。</p>
+<p><code>&lt;!--    --&gt;</code>（注释）</p>
+<h2 id="三、标签"><a href="#三、标签" class="headerlink" title="三、标签"></a>三、标签</h2><p><code>&lt;hn&gt;</code>标题标签共分为六级，通过<code>&lt;h1&gt;-&lt;h6&gt;</code>（大→小）等标签进行定义。</p>
+<h1>This is a heading</h1>
+
+
+
+<h2>This is a heading</h2>
+
+
+
+<h3>This is a heading</h3>
+
+
+
+<h4>This is a heading</h4>
+
+
+
+<h5>This is a heading</h5>
+
+
+<h6>This is a heading</h6>
+
+
+<h3 id="lt-a-gt-超链接"><a href="#lt-a-gt-超链接" class="headerlink" title="&lt;a&gt;超链接"></a>&lt;a&gt;超链接</h3><p>属性：href=”需要打开的地址”（必须有的属性）</p>
+<p>打开外网时，地址必须加上“http://   ”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">例：a href=&quot;http://www.baidu.com&quot;&gt;打开外网链接&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">   &lt;a href=&quot;page1.html&quot;&gt;打开本地链接&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">    属性：target=&quot; &quot; _self （默认在本页打开）；_blank （新建一个页面打开）</span><br><span class="line"></span><br><span class="line">　　例：&lt;a href=&quot;page1.html&quot; targe=&quot;_blank&quot; &gt;打开本地链接&lt;/a&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="lt-b-gt-加粗"><a href="#lt-b-gt-加粗" class="headerlink" title="&lt;b&gt;加粗"></a>&lt;b&gt;加粗</h3><p>　　例：&lt;b&gt;<b>加粗</b>&lt;/b&gt;不加粗</p>
+<h3 id="lt-i-gt-斜体"><a href="#lt-i-gt-斜体" class="headerlink" title="&lt;i&gt;斜体"></a>&lt;i&gt;斜体</h3><p>　　例：&lt;i&gt;<i>斜体</i>&lt;/i&gt;非斜体</p>
+<h3 id="lt-u-gt-下划线"><a href="#lt-u-gt-下划线" class="headerlink" title="&lt;u&gt;下划线"></a>&lt;u&gt;下划线</h3><p>　　例：&lt;u&gt;<u>下划线</u>&lt;/u&gt;不加下划线</p>
+<h3 id="lt-br-gt-lt-p-gt-两个标签都有换行的作用"><a href="#lt-br-gt-lt-p-gt-两个标签都有换行的作用" class="headerlink" title="&lt;br&gt; &lt;p&gt;两个标签都有换行的作用"></a>&lt;br&gt; &lt;p&gt;两个标签都有换行的作用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">　　&lt;br&gt;元素没有结束标签，一般写成&lt;br/&gt;代表空元素，相当于word中的shift+enter功能。</span><br><span class="line"></span><br><span class="line">　　&lt;p&gt;标签必须有结束标签，p元素的作用是标记一个段落。</span><br></pre></td></tr></table></figure>
+<h3 id="lt-img-gt-图片"><a href="#lt-img-gt-图片" class="headerlink" title="&lt;img&gt;图片"></a>&lt;img&gt;图片</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　例：&lt;img src=&quot;xxx.jpg&quot; width=&quot; ..px&quot;  height=&quot;..px&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>元素语法：<br>1.以开始标签起始。</p>
+<p>2.以结束标签终止。</p>
+<p>3.元素内容是开始标签和结束标签里面的内容。</p>
+<p>4.某些HTML元素具有空内容（empty content）。</p>
+<p>5.空元素在开始标签中进行关闭（以开始标签的结束而结束）。</p>
+<table><tr><td bgcolor="#FF4500"><font size="5" color="black">励志语录：活在当下，别在怀念过去或者憧憬未来中浪费掉你现在的生活。</font></td></tr></table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        </p><p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
