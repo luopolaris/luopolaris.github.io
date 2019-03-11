@@ -1,210 +1,243 @@
 <!DOCTYPE html>
 <html>
-  <!-- Html Head Tag-->
   <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="luopolaris">
-  <!-- Open Graph Data -->
-  <meta property="og:title" content="Polaris">
-  <meta property="og:description" content="">
-  <meta property="og:site_name" content="Polaris">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="http://yoursite.com">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="yanm1ng&#39;s blog">
+  <meta name="keyword" content="hexo-theme, vuejs">
   
-    <link rel="alternate" href="/atom.xml" title="Polaris" type="application/atom+xml">
+    <link rel="shortcut icon" href="/css/images/logo.png">
+  
+  <title>
+    
+      Polaris
+    
+  </title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link rel="stylesheet" href="/css/plugins/gitment.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  
+    <script src="/js/qrious.js"></script>
   
   
-    <link rel="icon" href="/favicon.png">
+    <script src="/js/gitment.js"></script>
+  
+  
+  
+    <!-- MathJax support START -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support END -->
   
 
-  <!-- Site Title -->
-  <title>Polaris</title>
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <!-- Custom CSS -->
-  
-  <link rel="stylesheet" href="/css/style.light.css">
-
-  <!-- Google Analytics -->
-  
 
 </head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png">
+</div>
 
   <body>
-    <!-- Page Header -->
-
-
-<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="page-title with-background-image">
-          <p class="title">Polaris</p>
-          <p class="subtitle"></p>
-        </div>
-        <div class="site-menu with-background-image">
-          <ul>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <div class="logo"></div>
+      <span>Polaris</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link active">首页</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">标签</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">归档</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">项目</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">关于</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
             
-              <li>
-                <a href="/">
-                  
-                  主页
-                  
-                </a>
-              </li>
+              <a href="/" class="menu-link mobile-active">首页</a>
             
-              <li>
-                <a href="/archives">
-                  
-                  时间轴
-                  
-                </a>
-              </li>
+          </li>
+        
+          <li class="menu-item">
             
-              <li>
-                <a href="https://github.com/luopolaris">
-                  
-                  Github
-                  
-                </a>
-              </li>
+              <a href="/tags/" class="menu-link">标签</a>
             
-              <li>
-                <a href="mailto:2622310588@qq.com">
-                  
-                  Email
-                  
-                </a>
-              </li>
+          </li>
+        
+          <li class="menu-item">
             
-          </ul>
-        </div>
-      </div>
+              <a href="/archives/" class="menu-link">归档</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">项目</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">关于</a>
+            
+          </li>
+        
+      </ul>
     </div>
   </div>
 </header>
 
-<!-- Home Page Post List -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 col-md-offset-1">
+    <main class="app-body">
+  
+    <article class="article-card">
+      <h2 class="article-head">
+        <a href="/2019/03/05/HTML学习笔记/">HTML学习笔记</a>
+      </h2>
+      <p class="article-date">March 5, 2019</p>
       
-        <div class="post-item-wrapper">
-  <a href="/2019/03/05/HTML学习笔记/" class="post-title">
-      HTML学习笔记
+        
+  <a href="/tags#HTML笔记">
+    <span class="tag-code">HTML笔记</span>
   </a>
-  <div class="post-excerpt">
-    <!-- Post Date and Categories -->
-    <div class="date-and-category">
-      <div class="date">2019-03-05</div>
-      <div class="categories">
+
+      
+      <div class="article-summary">
         
-          
-
-<a href="/categories/HTML/">HTML</a>
-
+          一、HTML基本构造1234567891011121314151617&lt;html&gt;（告知浏览器其自身是一个HTML文档）	&lt;head&gt;（定义文档的头部）		&lt;title&gt;这是网页的标题&lt;/title&gt;（定义文档的标题）	&lt;/head&gt ...
         
       </div>
-    </div>
-    <!-- Post Excerpt -->
-    <div class="excerpt typo">点击标题即可阅读</div>
-    <!-- Post Tags -->
-    <div class="tags">
+      <a class="more" href="/2019/03/05/HTML学习笔记/">Read more</a>
+    </article>
+  
+    <article class="article-card">
+      <h2 class="article-head">
+        <a href="/2019/03/05/常用的DOS命令/">常用的DOS命令</a>
+      </h2>
+      <p class="article-date">March 5, 2019</p>
       
         
-
-<a class="tag" href="/tags/HTML笔记/">HTML笔记</a>
-
-
-      
-    </div>
-  </div>
-</div>
-
-      
-        <div class="post-item-wrapper">
-  <a href="/2019/03/05/常用的DOS命令/" class="post-title">
-      常用的DOS命令
+  <a href="/tags#DOS命令">
+    <span class="tag-code">DOS命令</span>
   </a>
-  <div class="post-excerpt">
-    <!-- Post Date and Categories -->
-    <div class="date-and-category">
-      <div class="date">2019-03-05</div>
-      <div class="categories">
+
+      
+      <div class="article-summary">
         
-          
-
-<a href="/categories/CMD/">CMD</a>
-
+          Dos命令&emsp;&emsp;DOS命令为内部命令和外部命令，内部命令是随每次启动的COMMAND.COM装入并常驻内存，而外部命令是一条单独的可执行文件。在操作时要记住的是，内部命令在任何都时候可以使用，而外部命令需要保证命令文件在当前目录中，或在Autoexec.bat文件已经被加载 ...
         
       </div>
-    </div>
-    <!-- Post Excerpt -->
-    <div class="excerpt typo">点击标题即可阅读</div>
-    <!-- Post Tags -->
-    <div class="tags">
-      
-        
+      <a class="more" href="/2019/03/05/常用的DOS命令/">Read more</a>
+    </article>
+  
 
-<a class="tag" href="/tags/DOS命令/">DOS命令</a>
+  
+</main>
 
 
-      
-    </div>
-  </div>
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
 </div>
-
-      
-    </div>
-  </div>
-</div>
-
-<!-- Pagination -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 col-md-offset-1">
-      <ul class="pagination">
-          
-          
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-
-    <!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <p class="copyright text-muted">
-          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
-          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
-        </p><p class="copyright text-muted">
-          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
-        </p>
-      </div>
-    </div>
-  </div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2019 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
+  </p>
 </footer>
 
-
-    <!-- After Footer Scripts -->
-<script src="/js/highlight.pack.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function(event) {
-    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
-    codeBlocks.forEach(function(block, index) {
-      hljs.highlightBlock(block);
-    });
-  });
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
 </script>
 
+<script>
+  var hasLine = 'true';
+  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+<script src="/js/script.js"></script>
   </body>
 </html>
-

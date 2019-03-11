@@ -10,7 +10,7 @@
   
   <title>
     
-      Polaris
+      Tags | Polaris
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -144,40 +144,55 @@
 </header>
 
     <div id="article-banner">
-  <h2>Archives</h2>
-  <p class="post-date">文章归档</p>
+  <h2>Tags</h2>
+  <p class="post-date">标签检索</p>
 </div>
-<main class="app-body" id="archives">
-  
-  
-  
-    <section class="time-section">
-  <h1 class="section-year">
-    2019
-  </h1>
-  <div class="section-list">
+<main class="app-body">
+  <div id="tag-cloud">
     
+      <a class="tag3" data-name="tag-DOS命令">DOS命令</a>
     
-      <div class="section-list-item">
-        <a href="/2019/03/05/HTML学习笔记/" class="archive-title">HTML学习笔记</a>
-        <p class="archive-date">03-05</p>
-      </div>
-    
-      <div class="section-list-item">
-        <a href="/2019/03/05/常用的DOS命令/" class="archive-title">常用的DOS命令</a>
-        <p class="archive-date">03-05</p>
-      </div>
+      <a class="tag1" data-name="tag-HTML笔记">HTML笔记</a>
     
   </div>
-</section>
   
+    <div class="tag-list">
+      <h3 class="tag-name" id="tag-DOS命令">DOS命令</h3>
+      
+        <ul class="tag-preview">
+          <li>
+            <a href="/2019/03/05/常用的DOS命令/">常用的DOS命令</a>
+          </li>
+        </ul>
+        
+    </div>
+    
+    <div class="tag-list">
+      <h3 class="tag-name" id="tag-HTML笔记">HTML笔记</h3>
+      
+        <ul class="tag-preview">
+          <li>
+            <a href="/2019/03/05/HTML学习笔记/">HTML学习笔记</a>
+          </li>
+        </ul>
+        
+    </div>
+    
 </main>
 
 <script>
   (function () {
-    var url = 'http://yoursite.com/categories/CMD/index.html';
-    $('#article-banner').geopattern(url);
-    $('.header').removeClass('fixed-header');
+    var url = 'http://yoursite.com/tags/index.html'
+    $('#article-banner').geopattern(url)
+    $('.header').removeClass('fixed-header')
+
+    var tag = location.hash.replace('#', '')
+    if (tag) {
+      var tagId = "#tag-" + tag;
+      $("html, body").animate({
+        scrollTop: $(tagId).offset().top 
+      }, 400)
+    }
   })();
 </script>
     <div class="scroll-top">

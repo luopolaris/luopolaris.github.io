@@ -1,128 +1,159 @@
 <!DOCTYPE html>
 <html>
-  <!-- Html Head Tag-->
   <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="luopolaris">
-  <!-- Open Graph Data -->
-  <meta property="og:title" content="常用的DOS命令">
-  <meta property="og:description" content="">
-  <meta property="og:site_name" content="Polaris">
-  <meta property="og:type" content="article">
-  <meta property="og:image" content="http://yoursite.com">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="yanm1ng&#39;s blog">
+  <meta name="keyword" content="hexo-theme, vuejs">
   
-    <link rel="alternate" href="/atom.xml" title="Polaris" type="application/atom+xml">
+    <link rel="shortcut icon" href="/css/images/logo.png">
+  
+  <title>
+    
+      常用的DOS命令 | Polaris
+    
+  </title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link rel="stylesheet" href="/css/plugins/gitment.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  
+    <script src="/js/qrious.js"></script>
   
   
-    <link rel="icon" href="/favicon.png">
+    <script src="/js/gitment.js"></script>
+  
+  
+  
+    <!-- MathJax support START -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support END -->
   
 
-  <!-- Site Title -->
-  <title>Polaris</title>
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <!-- Custom CSS -->
-  
-  <link rel="stylesheet" href="/css/style.light.css">
-
-  <!-- Google Analytics -->
-  
 
 </head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png">
+</div>
 
   <body>
-    <!-- Page Header -->
-
-
-<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="page-title with-background-image">
-          <p class="title">常用的DOS命令</p>
-          <p class="subtitle"></p>
-        </div>
-        <div class="site-menu with-background-image">
-          <ul>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <div class="logo"></div>
+      <span>Polaris</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">首页</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">标签</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">归档</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">项目</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">关于</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
             
-              <li>
-                <a href="/">
-                  
-                  主页
-                  
-                </a>
-              </li>
+              <a href="/" class="menu-link">首页</a>
             
-              <li>
-                <a href="/archives">
-                  
-                  时间轴
-                  
-                </a>
-              </li>
+          </li>
+        
+          <li class="menu-item">
             
-              <li>
-                <a href="https://github.com/luopolaris">
-                  
-                  Github
-                  
-                </a>
-              </li>
+              <a href="/tags/" class="menu-link">标签</a>
             
-              <li>
-                <a href="mailto:2622310588@qq.com">
-                  
-                  Email
-                  
-                </a>
-              </li>
+          </li>
+        
+          <li class="menu-item">
             
-          </ul>
-        </div>
-      </div>
+              <a href="/archives/" class="menu-link">归档</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">项目</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">关于</a>
+            
+          </li>
+        
+      </ul>
     </div>
   </div>
 </header>
 
-<article>
-  <div class="container typo">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="post-info text-muted">
-          
-            <!-- Author -->
-            <span class="author info">By luopolaris</span>
-          
-          <!-- Date -->
-          <span class="date-time info">On
-            <span class="date">2019-03-05</span>
-            <span class="time">22:31:33</span>
-          </span>
-          
-          <!--  Categories  -->
-            <span class="categories info">Under 
-
-<a href="/categories/CMD/">CMD</a>
-</span>
-          
-        </div>
-        <!-- Tags -->
-        
-          <div class="post-tags text-muted">
-            Tags: 
-
-<a class="tag" href="/tags/DOS命令/">#DOS命令</a>
-
-
-          </div>
-        
-        <!-- Post Main Content -->
-        <div class="post-content">
-          <h1 id="Dos命令"><a href="#Dos命令" class="headerlink" title="Dos命令"></a>Dos命令</h1><p>&emsp;&emsp;DOS命令为<strong>内部命令</strong>和<strong>外部命令</strong>，内部命令是随每次启动的COMMAND.COM装入并常驻内存，而外部命令是一条单独的可执行文件。在操作时要记住的是，内部命令在任何都时候可以使用，而外部命令需要保证命令文件在当前目录中，或在Autoexec.bat文件已经被加载了路径。</p>
+    <div id="article-banner">
+  <h2>常用的DOS命令</h2>
+  <p class="post-date">2019-03-05</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><h1 id="Dos命令"><a href="#Dos命令" class="headerlink" title="Dos命令"></a>Dos命令</h1><p>&emsp;&emsp;DOS命令为<strong>内部命令</strong>和<strong>外部命令</strong>，内部命令是随每次启动的COMMAND.COM装入并常驻内存，而外部命令是一条单独的可执行文件。在操作时要记住的是，内部命令在任何都时候可以使用，而外部命令需要保证命令文件在当前目录中，或在Autoexec.bat文件已经被加载了路径。</p>
 <h2 id="常见的内部命令："><a href="#常见的内部命令：" class="headerlink" title="常见的内部命令："></a>常见的内部命令：</h2><h2 id="1-DIR"><a href="#1-DIR" class="headerlink" title="1.DIR"></a>1.DIR</h2><p>含义：显示指定路径上所有文件或目录的信息。<br>格式：DIR [盘符:][路径][文件名][参数]<br>参数：<br>/W: 宽屏显示，一排显示5个文件名，而不会显示修改时时间，文件大小等信息；<br>/P: 分页显示，当屏幕无法将信息完全显示时，可使用其进行分页显示；<br>/A: 显示具有特殊属性的文件；<br>/S: 显示当前目录及其子目录下所有的文件。</p>
 <h2 id="2-CD"><a href="#2-CD" class="headerlink" title="2.CD"></a>2.CD</h2><p>含义:进入指定目录。<br>格式:CD [ 路径]<br>举例:CD DOS<br>CD命令只能进入当前盘符中的目录，其中“CD”为返回到根目录，“CD..”为返回到上一层目录。</p>
 <h2 id="3-MD"><a href="#3-MD" class="headerlink" title="3.MD"></a>3.MD</h2><p>含义：建立目录。<br>格式：MD [盘符][路径]<br>举例：MD TEMP<br>表示在当前盘符下建立一个名为TEMP的目录。</p>
@@ -136,43 +167,223 @@
 <h2 id="3-XCOPY"><a href="#3-XCOPY" class="headerlink" title="3.XCOPY"></a>3.XCOPY</h2><p>含义：拷贝命令。<br>格式：XCOPY [源路径][源目录/文件名][目的目录/文件名][参数]<br>举例：XCOPY C:ABC D:/S<br>执行命令后。将把C:ABC目录及目录中的文件全部拷贝到D盘目录下，XCOPY是COPY的增强命令，可以实现对多个子目录进行拷贝，最常见的参数是/S，它可以对一个目录下的所有子目录进行拷贝。</p>
 <h2 id="4-DELTREE"><a href="#4-DELTREE" class="headerlink" title="4.DELTREE"></a>4.DELTREE</h2><p>含义：删除目录树。<br>格式：DELTREE [盘符][路径]<br>举例：DELTREE ARE<br>表示删除当前路径下的ARE子目录，执行后会提示是否确认删除，按下Y，即可删除。</p>
 <table><td bgcolor="yellow"> <font color="##FF0000" size="5">励志语录：活在当下，别在怀念过去或者憧憬未来中浪费掉你现在的生活。</font></td></table>
+</section>
+    <!-- Tags START -->
+    
+      <div class="tags">
+        <span>Tags:</span>
+        
+  <a href="/tags#DOS命令">
+    <span class="tag-code">DOS命令</span>
+  </a>
 
+      </div>
+    
+    <!-- Tags END -->
+    <!-- NAV START -->
+    
+  <div class="nav-container">
+    <!-- reverse left and right to put prev and next in a more logic postition -->
+    
+    
+      <a class="nav-right" href="/2019/03/05/HTML学习笔记/">
+        
+          HTML学习笔记
+        
+        <span class="nav-arrow"> →</span>
+      </a>
+    
+  </div>
+
+    <!-- NAV END -->
+    <!-- 打赏 START -->
+    
+      <div class="money-like">
+        <div class="reward-btn">
+          赏
+          <span class="money-code">
+            <span class="alipay-code">
+              <div class="code-image"></div>
+              <b>使用支付宝打赏</b>
+            </span>
+            <span class="wechat-code">
+              <div class="code-image"></div>
+              <b>使用微信打赏</b>
+            </span>
+          </span>
         </div>
+        <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
       </div>
-    </div>
-  </div>
-</article>
-
-
-
-    <!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <p class="copyright text-muted">
-          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
-          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
-        </p><p class="copyright text-muted">
-          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
-        </p>
+    
+    <!-- 打赏 END -->
+    <!-- 二维码 START -->
+    
+      <div class="qrcode">
+        <canvas id="share-qrcode"></canvas>
+        <p class="notice">扫描二维码，分享此文章</p>
       </div>
-    </div>
+    
+    <!-- 二维码 END -->
+    
+      <!-- Gitment START -->
+      <div id="comments"></div>
+      <!-- Gitment END -->
+    
+  </article>
+  <!-- Article END -->
+  <!-- Catalog START -->
+  
+    <aside class="catalog-container">
+  <div class="toc-main">
+    <strong class="toc-title">Catalog</strong>
+    
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Dos命令"><span class="toc-nav-text">Dos命令</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#常见的内部命令："><span class="toc-nav-text">常见的内部命令：</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1-DIR"><span class="toc-nav-text">1.DIR</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2-CD"><span class="toc-nav-text">2.CD</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-MD"><span class="toc-nav-text">3.MD</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4-RD"><span class="toc-nav-text">4.RD</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#5-COPY"><span class="toc-nav-text">5.COPY</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#6-DEL"><span class="toc-nav-text">6.DEL</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#7-SYS"><span class="toc-nav-text">7.SYS</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#常见的外部命令："><span class="toc-nav-text">常见的外部命令：</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1-EDIT"><span class="toc-nav-text">1.EDIT</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2-FORMAT"><span class="toc-nav-text">2.FORMAT</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3-XCOPY"><span class="toc-nav-text">3.XCOPY</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4-DELTREE"><span class="toc-nav-text">4.DELTREE</span></a></li></ol></li></ol>
+    
   </div>
-</footer>
+</aside>
+  
+  <!-- Catalog END -->
+</main>
 
-
-    <!-- After Footer Scripts -->
-<script src="/js/highlight.pack.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function(event) {
-    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
-    codeBlocks.forEach(function(block, index) {
-      hljs.highlightBlock(block);
-    });
-  });
+  (function () {
+    var url = 'http://yoursite.com/2019/03/05/常用的DOS命令/';
+    var banner = ''
+    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
+
+    // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== 'http://file.muyutech.com/error-img.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+  })();
 </script>
 
+
+  <script>
+    var qr = new QRious({
+      element: document.getElementById('share-qrcode'),
+      value: document.location.href
+    });
+  </script>
+
+
+
+  <script>
+    var gitmentConfig = "yanm1ng";
+    if (gitmentConfig !== 'undefined') {
+      var gitment = new Gitment({
+        id: "常用的DOS命令",
+        owner: "yanm1ng",
+        repo: "yanm1ng.github.io",
+        oauth: {
+          client_id: "0f87e490e00ee3fd87ef",
+          client_secret: "4a9d2b148e7971c2201ad12131ce8bf8159ccd2e"
+        },
+        theme: {
+          render(state, instance) {
+            const container = document.createElement('div')
+            container.lang = "en-US"
+            container.className = 'gitment-container gitment-root-container'
+            container.appendChild(instance.renderHeader(state, instance))
+            container.appendChild(instance.renderEditor(state, instance))
+            container.appendChild(instance.renderComments(state, instance))
+            container.appendChild(instance.renderFooter(state, instance))
+            return container;
+          }
+        }
+      })
+      gitment.render(document.getElementById('comments'))
+    }
+  </script>
+
+
+
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2019 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'true';
+  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+<script src="/js/script.js"></script>
   </body>
 </html>
-
